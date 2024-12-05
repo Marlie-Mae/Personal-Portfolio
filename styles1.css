@@ -1,35 +1,107 @@
+/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #121212;
     color: white;
-    overflow: hidden;
-}
-
-.portfolio-container {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #121212;
-    padding: 0;
+}
+
+/* Portfolio Container */
+.portfolio-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Left Content */
+.left-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .image-wrapper {
-    text-align: center;
-    background-color: #27ae60;
+    position: relative;
+    display: inline-block;
+}
+
+.image-border {
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+    padding: 10px;
     border-radius: 10px;
+    display: inline-block;
+}
+
+.image-border img {
     width: 300px;
-    margin-left: 200px;
-}
-
-.image-wrapper img {
-    width: 300px; /* Adjust the size to make it prominent */
+    height: auto;
     border-radius: 10px;
-    transition: transform 0.3s ease;
-    margin-left: 20px;
-    margin-bottom: 20px;
 }
 
-.image-wrapper img:hover {
+/* Right Content */
+.right-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.right-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #27ae60;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.right-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.hire-me {
+    background-color: #27ae60;
+    border: 2px solid transparent;
+}
+
+.hire-me:hover {
+    background-color: #1f8e4a;
     transform: scale(1.05);
-    overflow: hidden; /* Prevent hover scaling from adding scrollbars */
+}
+
+.download-cv {
+    background: none;
+    border: 2px solid #27ae60;
+    color: #27ae60;
+}
+
+.download-cv:hover {
+    background-color: #27ae60;
+    color: white;
+    transform: scale(1.05);
 }
