@@ -2,12 +2,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #1c1c1c;
+    /*background-color: #121212;*/
     color: white;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    overflow-y: auto;
+    margin-top: 200px;
 }
 
 /* Portfolio Container */
@@ -15,10 +17,11 @@ body {
     display: flex;
     width: 90%;
     max-width: 1200px;
-    background-color: #1c1c1c;
+    /*background-color: #1c1c1c;*/
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);*/
+    margin: 50px;
 }
 
 /* Left Content */
@@ -31,21 +34,28 @@ body {
 }
 
 .image-wrapper {
-    position: relative;
+    position: absolute;
     display: inline-block;
 }
 
 .image-border {
     background: linear-gradient(45deg, #27ae60, #2ecc71);
-    padding: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     display: inline-block;
+    width: 300px;
 }
 
 .image-border img {
     width: 300px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0px;
+    margin-left: 30px;
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+
+.image-wrapper img:hover {
+    transform: scale(1.05); /* Enlarges the image slightly on hover */
 }
 
 /* Right Content */
@@ -57,7 +67,6 @@ body {
 .right-content h2 {
     font-size: 36px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #27ae60;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -66,42 +75,94 @@ body {
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: 25px;
+    margin-top: 50px;
 }
-
-/* Buttons */
-.cta-buttons {
+.about-me-heading {
     display: flex;
-    gap: 20px;
-}
-
-.btn {
-    padding: 12px 25px;
-    font-size: 16px;
-    text-decoration: none;
+    align-items: center;
+    gap: 10px; /* Space between the text and the hr */
+    font-size: 36px;
+    margin-bottom: 15px;
     color: white;
-    border-radius: 25px;
-    text-align: center;
-    transition: all 0.3s ease;
+    position: relative;
 }
 
-.hire-me {
-    background-color: #27ae60;
-    border: 2px solid transparent;
+.about-me-heading hr {
+    position: absolute;
+    top: 0%; /* Vertically align the hr */
+    right: -80px; /* Position the hr on the right */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    border: none;
+    border-top: 4px solid #27ae60;
+    width: 450px; /* Adjust the width of the hr as needed */
+    overflow-x: hidden;
 }
 
-.hire-me:hover {
-    background-color: #1f8e4a;
-    transform: scale(1.05);
+
+/* Skills Section */
+/* Skills Container */
+.skills-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #272727;
+    border-radius: 15px;
 }
 
-.download-cv {
-    background: none;
-    border: 2px solid #27ae60;
+/* Skills Left Section */
+.skills-left {
+    flex: 1;
+    padding: 20px;
+}
+
+.skill-heading {
+    font-size: 32px;
     color: #27ae60;
+    margin-bottom: 20px;
 }
 
-.download-cv:hover {
-    background-color: #27ae60;
-    color: white;
-    transform: scale(1.05);
+.skill-heading hr {
+    border: none;
+    border-top: 4px solid #27ae60;
+    width: 270px;
+    margin-top: -20px;
+    margin-left: -350px;
+    margin-bottom: 10px;
+}
+
+.skills-left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.skills-left h2 {
+    margin-left: 300px;
+}
+
+.skills-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-left ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Skills Right Section */
+.skills-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
