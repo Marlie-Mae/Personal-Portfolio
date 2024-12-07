@@ -550,7 +550,7 @@ section .title::after {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #003300;
+  border: 5px solid white;
   transition: all 0.3s ease;
 }
 
@@ -585,7 +585,7 @@ section .title::after {
 
 /*  Contact  */
 .contact {
-  background: radial-gradient(#e1efff, white);
+  background: radial-gradient(white, white);
 }
 
 .contact .title::after {
@@ -622,7 +622,7 @@ section .title::after {
 
 .contact .contact-content .row i {
   font-size: 25px;
-  color: #1e3551;
+  color: #003300;
 }
 
 .contact .contact-content .info .head {
@@ -663,7 +663,7 @@ section .title::after {
   outline: none;
   padding: 0 15px;
   font-size: 17px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
   transition: all 0.3s ease;
 }
 
@@ -678,6 +678,7 @@ section .title::after {
 }
 
 .contact .right form .button-area {
+  margin-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -693,13 +694,13 @@ section .title::after {
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: #1e3551;
-  border: 2px solid #1e3551;
+  background: #003300;
+  border: 2px solid #003300;
   transition: all 0.3s ease;
 }
 
 .right form .button-area button:hover {
-  color: #1e3551;
+  color: #003300;
   background: none;
   animation: pulsate 1s ease-in-out;
 }
@@ -743,7 +744,7 @@ section .title::after {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #1e3551;
+  background-color: #003300;
   text-align: center;
   transition: 0.6s;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
@@ -788,12 +789,12 @@ section .title::after {
 footer {
   background: #111;
   padding: 6px 16px;
-  color: #888c8d;
+  color: white;
   text-align: center;
 }
 
 footer span a {
-  color: #1e3551;
+  color: #39FF14;
   text-decoration: none;
 }
 
