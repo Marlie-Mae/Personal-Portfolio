@@ -425,7 +425,7 @@ section .title::after {
 
 .skills .skills-content .left a {
   display: inline-block;
-  background: #1e3551;
+  background: #003300;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -437,7 +437,7 @@ section .title::after {
 }
 
 .skills .skills-content .left a:hover {
-  color: #1e3551;
+  color: #003300;
   background: none;
   animation: pulsate 1s ease-in-out;
 }
@@ -449,8 +449,8 @@ section .title::after {
 
 .intern::before,
 .project::before {
-  content: "✪ ";
-  color: #1e3551;
+  content: "✦ ";
+  color: #003300;
 }
 
 .skills .skills-content .right .bars {
@@ -524,7 +524,7 @@ section .title::after {
 }
 
 .projects .carousel .card:hover {
-  background: #1e3551;
+  background: #003300;
 }
 
 .projects .carousel .card .box {
@@ -550,7 +550,7 @@ section .title::after {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #888c8d;
+  border: 5px solid #003300;
   transition: all 0.3s ease;
 }
 
@@ -569,7 +569,7 @@ section .title::after {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid #888c8d !important;
+  border: 2px solid white !important;
   transition: all 0.3s ease;
 }
 
@@ -580,7 +580,7 @@ section .title::after {
 
 .owl-dot.active,
 .owl-dot:hover {
-  background: #18365a !important;
+  background: white !important;
 }
 
 /*  Contact  */
