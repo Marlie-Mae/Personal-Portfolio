@@ -1,3 +1,4 @@
+/* General Reset and Styling */
 * {
     margin: 0;
     padding: 0;
@@ -88,11 +89,17 @@
     font-weight: 600;
   }
   
+  /*  Nav Logo Span Linear-Gradient  */
   .navbar .logo a span {
-    background: linear-gradient(90deg, #39FF14, #39FF14, #39FF14);
+    background-color: inherit;
+    /*background: linear-gradient(90deg, #39FF14, #39FF14, #39FF14); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease;
+  }
+  
+  .navbar.sticky .logo a span {
+    color: #fff;
   }
   
   .navbar .menu li {
